@@ -12,12 +12,10 @@ const AscensaoSilber = () => {
   const [activeSection, setActiveSection] = useState("available");
 
   const sidebarLinks = [
-    { id: "available", label: "Disponível Agora", icon: "✅" },
-    { id: "clans", label: "Clans & Guildas", icon: "🛡️" },
-    { id: "rooms", label: "Salas de Jogos", icon: "🎮" },
-    { id: "servers", label: "Servidores", icon: "🖥️" },
-    { id: "live", label: "Lives", icon: "🔴" },
-    { id: "news", label: "Notícias", icon: "📰" },
+    { id: "available", label: "Disponível Agora", icon: "✅", href: "/ascensao-silber/available" },
+    { id: "clans", label: "Clans & Guildas", icon: "🛡️", href: "/ascensao-silber/clans" },
+    { id: "live", label: "Lives", icon: "🔴", href: "/ascensao-silber/live" },
+    { id: "news", label: "Notícias", icon: "📰", href: "/ascensao-silber/news" },
   ];
 
   const liveStreams = [

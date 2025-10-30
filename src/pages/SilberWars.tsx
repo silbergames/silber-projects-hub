@@ -13,12 +13,12 @@ const SilberWars = () => {
   const [activeSection, setActiveSection] = useState("upcoming");
 
   const sidebarLinks = [
-    { id: "upcoming", label: "Próximos Campeonatos", icon: "📅" },
-    { id: "ongoing", label: "Em Andamento", icon: "⚔️" },
-    { id: "live", label: "Lives", icon: "🔴" },
-    { id: "history", label: "Histórico", icon: "🏆" },
-    { id: "scores", label: "Pontuações", icon: "📊" },
-    { id: "news", label: "Notícias", icon: "📰" },
+    { id: "upcoming", label: "Próximos Campeonatos", icon: "📅", href: "/silber-wars/upcoming" },
+    { id: "ongoing", label: "Em Andamento", icon: "⚔️", href: "/silber-wars/ongoing" },
+    { id: "live", label: "Lives", icon: "🔴", href: "/silber-wars/live" },
+    { id: "history", label: "Histórico", icon: "🏆", href: "/silber-wars/history" },
+    { id: "scores", label: "Pontuações", icon: "📊", href: "/silber-wars/scores" },
+    { id: "news", label: "Notícias", icon: "📰", href: "/silber-wars/news" },
   ];
 
   const upcomingTournaments = [

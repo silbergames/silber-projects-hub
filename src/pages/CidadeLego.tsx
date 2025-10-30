@@ -13,10 +13,10 @@ const CidadeLego = () => {
   const [activeSection, setActiveSection] = useState("video");
 
   const sidebarLinks = [
-    { id: "video", label: "Cidade ao Vivo", icon: "🎥" },
-    { id: "news", label: "Últimas Notícias", icon: "📰" },
-    { id: "live", label: "Tempo Real", icon: "🔴" },
-    { id: "voting", label: "Votações", icon: "🗳️" },
+    { id: "video", label: "Cidade ao Vivo", icon: "🎥", href: "/cidade-lego/video" },
+    { id: "news", label: "Últimas Notícias", icon: "📰", href: "/cidade-lego/news" },
+    { id: "live", label: "Tempo Real", icon: "🔴", href: "/cidade-lego/live" },
+    { id: "voting", label: "Votações", icon: "🗳️", href: "/cidade-lego/voting" },
   ];
 
   const newsItems = [

@@ -31,6 +31,17 @@ import SilberWarsHistory from "./pages/silber-wars/HistoryPage";
 import SilberWarsScores from "./pages/silber-wars/ScoresPage";
 import SilberWarsNews from "./pages/silber-wars/NewsPage";
 
+// Saga Silber sub-pages
+import SagaSilberCategories from "./pages/saga-silber/CategoriesPage";
+import SagaSilberLive from "./pages/saga-silber/LivePage";
+import SagaSilberNews from "./pages/saga-silber/NewsPage";
+
+// Ascensão Silber sub-pages
+import AscensaoSilberAvailable from "./pages/ascensao-silber/AvailablePage";
+import AscensaoSilberClans from "./pages/ascensao-silber/ClansPage";
+import AscensaoSilberLive from "./pages/ascensao-silber/LivePage";
+import AscensaoSilberNews from "./pages/ascensao-silber/NewsPage";
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -62,7 +73,15 @@ const App = () => (
           <Route path="/silber-wars/news" element={<SilberWarsNews />} />
           
           <Route path="/saga-silber" element={<SagaSilber />} />
+          <Route path="/saga-silber/categories" element={<SagaSilberCategories />} />
+          <Route path="/saga-silber/live" element={<SagaSilberLive />} />
+          <Route path="/saga-silber/news" element={<SagaSilberNews />} />
+          
           <Route path="/ascensao-silber" element={<AscensaoSilber />} />
+          <Route path="/ascensao-silber/available" element={<AscensaoSilberAvailable />} />
+          <Route path="/ascensao-silber/clans" element={<AscensaoSilberClans />} />
+          <Route path="/ascensao-silber/live" element={<AscensaoSilberLive />} />
+          <Route path="/ascensao-silber/news" element={<AscensaoSilberNews />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

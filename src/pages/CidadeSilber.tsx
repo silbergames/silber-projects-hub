@@ -13,10 +13,10 @@ const CidadeSilber = () => {
   const [activeSection, setActiveSection] = useState("video");
 
   const sidebarLinks = [
-    { id: "video", label: "Cidade ao Vivo", icon: "🎥" },
-    { id: "news", label: "Últimas Notícias", icon: "📰" },
-    { id: "live", label: "Tempo Real", icon: "🔴" },
-    { id: "voting", label: "Votações", icon: "🗳️" },
+    { id: "video", label: "Cidade ao Vivo", icon: "🎥", href: "/cidade-silber/video" },
+    { id: "news", label: "Últimas Notícias", icon: "📰", href: "/cidade-silber/news" },
+    { id: "live", label: "Tempo Real", icon: "🔴", href: "/cidade-silber/live" },
+    { id: "voting", label: "Votações", icon: "🗳️", href: "/cidade-silber/voting" },
   ];
 
   const newsItems = [

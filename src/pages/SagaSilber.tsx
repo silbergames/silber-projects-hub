@@ -13,9 +13,9 @@ const SagaSilber = () => {
   const [activeSection, setActiveSection] = useState("categories");
 
   const sidebarLinks = [
-    { id: "categories", label: "Gameplays por Categoria", icon: "🎮" },
-    { id: "live", label: "Lives ao Vivo", icon: "🔴" },
-    { id: "news", label: "Notícias", icon: "📰" },
+    { id: "categories", label: "Gameplays por Categoria", icon: "🎮", href: "/saga-silber/categories" },
+    { id: "live", label: "Lives ao Vivo", icon: "🔴", href: "/saga-silber/live" },
+    { id: "news", label: "Notícias", icon: "📰", href: "/saga-silber/news" },
   ];
 
   const gameplaysByCategory = {
