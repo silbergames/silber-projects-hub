@@ -26,7 +26,6 @@ const ProjectSidebar = ({ links, activeSection, onNavigate }: ProjectSidebarProp
             activeSection === link.id && "bg-accent text-white border-accent"
           )}
           onClick={() => onNavigate(link.id)}
-          asChild={!!link.icon}
         >
           {link.icon && <span className="mr-2">{link.icon}</span>}
           {link.label}
